@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Dropdown</title>
+  </head>
+  <body>
+    <div className="container">
+      <h1>Dropdown <small>Bootstrap Visual Test</small></h1>
+
+      <nav className="navbar navbar-expand-md bg-light">
+        <a className="navbar-brand" href="#">Navbar</a>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navbarResponsive">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link active" href="#" aria-current="page">Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Link</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Link</a>
+            </li>
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+              <ul className="dropdown-menu">
+                <li><a className="dropdown-item" href="#">Action</a></li>
+                <li><a className="dropdown-item" href="#">Another action</a></li>
+                <li><a className="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul className="nav nav-pills mt-3">
+        <li className="nav-item">
+          <a className="nav-link active" href="#">Active</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Link</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Link</a>
+        </li>
+        <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+          <ul className="dropdown-menu">
+            <li><a className="dropdown-item" href="#">Action</a></li>
+            <li><a className="dropdown-item" href="#">Another action</a></li>
+            <li><a className="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div className="row">
+        <div className="col-sm-12 mt-4">
+          <div className="dropdown">
+            <button type="button" className="btn btn-secondary" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+            <div className="dropdown-menu">
+              <input id="textField" type="text">
+            </div>
+          </div>
+          <div className="btn-group dropup">
+            <button type="button" className="btn btn-secondary">Dropup split</button>
+            <button type="button" className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <span className="visually-hidden">Dropup split</span>
+            </button>
+            <ul className="dropdown-menu">
+              <li><a className="dropdown-item" href="#">Action</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><a className="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="col-sm-12 mt-4">
+          <div className="btn-group dropup">
+            <button type="button" className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dropup</button>
+            <ul className="dropdown-menu">
+              <li><a className="dropdown-item" href="#">Action</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><a className="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+
+          <div className="btn-group">
+            <button type="button" className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              This dropdown's menu is end-aligned
+            </button>
+            <div className="dropdown-menu dropdown-menu-end">
+              <button className="dropdown-item" type="button">Action</button>
+              <button className="dropdown-item" type="button">Another action</button>
+              <button className="dropdown-item" type="button">Something else here</button>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-sm-12 mt-4">
+          <div className="btn-group dropup">
+            <a href="#" className="btn btn-secondary">Dropup split align end</a>
+            <button type="button" id="dropdown-page-subheader-button-3" className="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span className="visually-hidden">Product actions</span>
+            </button>
+            <div className="dropdown-menu dropdown-menu-end">
+              <button className="dropdown-item" type="button">Action</button>
+              <button className="dropdown-item" type="button">Another action</button>
+              <button className="dropdown-item" type="button">Something else here with a long text</button>
+            </div>
+          </div>
+          <div className="btn-group dropup">
+            <button type="button" className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dropup align end</button>
+            <div className="dropdown-menu dropdown-menu-end">
+              <button className="dropdown-item" type="button">Action</button>
+              <button className="dropdown-item" type="button">Another action</button>
+              <button className="dropdown-item" type="button">Something else here with a long text</button>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-sm-12 mt-4">
+          <div className="btn-group dropend">
+            <a href="#" className="btn btn-secondary">Dropend split</a>
+            <button type="button" id="dropdown-page-subheader-button-4" className="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span className="visually-hidden">Product actions</span>
+            </button>
+            <div className="dropdown-menu">
+              <button className="dropdown-item" type="button">Action</button>
+              <button className="dropdown-item" type="button">Another action</button>
+              <button className="dropdown-item" type="button">Something else here with a long text</button>
+            </div>
+          </div>
+          <div className="btn-group dropend">
+            <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropend
+            </button>
+            <div className="dropdown-menu">
+              <button className="dropdown-item" type="button">Action</button>
+              <button className="dropdown-item" type="button">Another action</button>
+              <button className="dropdown-item" type="button">Something else here</button>
+            </div>
+          </div>
+          <!-- dropstart -->
+          <div className="btn-group dropstart">
+            <a href="#" className="btn btn-secondary">Dropstart split</a>
+            <button type="button" id="dropdown-page-subheader-button-5" className="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span className="visually-hidden">Product actions</span>
+            </button>
+            <div className="dropdown-menu">
+              <button className="dropdown-item" type="button">Action</button>
+              <button className="dropdown-item" type="button">Another action</button>
+              <button className="dropdown-item" type="button">Something else here with a long text</button>
+            </div>
+          </div>
+          <div className="btn-group dropstart">
+            <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropstart
+            </button>
+            <div className="dropdown-menu">
+              <button className="dropdown-item" type="button">Action</button>
+              <button className="dropdown-item" type="button">Another action</button>
+              <button className="dropdown-item" type="button">Something else here</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="col-sm-3 mt-4">
+          <div className="btn-group dropdown">
+            <button type="button" className="btn btn-secondary">Dropdown reference</button>
+            <button type="button" className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+              <span className="visually-hidden">Dropdown split</span>
+            </button>
+            <ul className="dropdown-menu">
+              <li><a className="dropdown-item" href="#">Action</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><a className="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div className="col-sm-3 mt-4">
+          <div className="dropdown">
+            <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+              Dropdown menu without Popper
+            </button>
+            <ul className="dropdown-menu">
+              <li><a className="dropdown-item" href="#">Action</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><a className="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../../dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
